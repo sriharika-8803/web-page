@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ART GALLERY</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+body{
+background-image: url(https://wallup.net/wp-content/uploads/2019/09/2090-dull-sunset.jpg);
+background-size: cover;
+}
+div{
+padding: 0;
+margin: 0;
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+}
+nav{
+margin-top: 25px;
+overflow: hidden;
+background-color:grey;
+padding-right: 10px;
+opacity: 1;
+}
+nav a{
+font-family:castellar ;
+float: left;
+display: block;
+text-decoration: none;
+font-weight: bolder;
+color: black;
+opacity: 1;
+text-align: center;
+padding: 14px 16px;
+}
+label{
+    text-decoration: underline;
+    font-family: Magneto;
+}
+.HOME{
+    background-color: black;
+    color: white;
+    width: 5%;
+}
+h1{
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Georgia;
+    text-shadow: 7px 7px 10px orangered;
+
+   
+}
+h2{
+    color: black;
+    font-family: Palatino Linotype;
+    text-shadow: 5px 5px 10px palegreen;
+}
+.ss{
+
+    font-family: algerian;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 50px;
+
+}
+.slide-container{
+width: 100%;
+height: 85vh;
+display: flex;
+align-items: center;
+overflow: hidden;
+background: linear-gradient(to right,rgb(255,65,108)),rgb(255,75,43));
+}
+.image-slider{
+width: 100%;
+height: 600px;
+position: absolute;
+margin-top: 8%;
+left: 0px;
+display: flex;
+justify-content: center;
+transition: .7s;
+}
+.slides-div{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 30px 0 30px;
+}
+.img{
+position: relative;
+width: 240px;
+height: 370px;
+transition: .5s;
+filter: saturate(10%);
+}
+.button{
+position: absolute;
+width: 240px;
+height: 370px;
+transition: .5s;
+background-color: rgba(0,0,0,.4);
+}
+.button:hover{
+background-color: rgba(0,0,0,.2);
+}
+#slider-span1:target ~ .image-slider #img1,
+#slider-span1:target ~ .image-slider #button-1{
+width: 380px;
+height: 585px;
+background-color: transparent;
+filter: saturate(100%);
+}
+
+#slider-span2:target ~ .image-slider #img2,
+#slider-span2:target ~ .image-slider #button-2{
+width: 380px;
+height: 585px;
+background-color: transparent;
+filter: saturate(100%);
+}
+
+#slider-span3:target ~ .image-slider #img3,
+#slider-span3:target ~ .image-slider #button-3{
+width: 380px;
+height: 585px;
+background-color: transparent;
+filter: saturate(100%);
+}
+
+#slider-span4:target ~ .image-slider #img4,
+#slider-span4:target ~ .image-slider #button-4{
+width: 380px;
+height: 585px;
+background-color: transparent;
+filter: saturate(100%);
+}
+
+#slider-span5:target ~ .image-slider #img5,
+#slider-span5:target ~ .image-slider #button-5{
+width: 380px;
+height: 585px;
+background-color: transparent;
+filter: saturate(100%);
+}
+
+#slider-span6:target ~ .image-slider #img6,
+#slider-span6:target ~ .image-slider #button-6{
+width: 380px;
+height: 585px;
+background-color: transparent;
+filter: saturate(100%);
+}
+
+#slider-span7:target ~ .image-slider #img7,
+#slider-span7:target ~ .image-slider #button-7{
+width: 380px;
+height: 585px;
+background-color: transparent;
+filter: saturate(100%);
+}
+
+#slider-span1:target ~ .image-slider{left: 70%}
+#slider-span2:target ~ .image-slider{left: 50%}
+#slider-span3:target ~ .image-slider{left: 25%}
+#slider-span5:target ~ .image-slider{left: -25%}
+#slider-span6:target ~ .image-slider{left: -50%}
+#slider-span7:target ~ .image-slider{left: -70%}
+
+.HOME:hover{
+background-color: green;
+color: white;
+opacity: 1;
+text-shadow: 5px 5px 10px black;
+}
+.signup:hover{  
+background-color: green;
+color: white;
+opacity: 1;
+text-shadow: 5px 5px 10px black;
+}
+.flm:hover{
+background-color: green;
+color: white;
+opacity: 1;
+text-shadow: 5px 5px 10px black;
+}
+.cnt:hover{
+background-color: green;
+color: white;
+opacity: 1;
+text-shadow: 5px 5px 10px black;
+}
+.abt:hover{
+background-color: green;
+color: white;
+opacity: 1;
+text-shadow: 5px 5px 10px black;
+}
+.tag{
+color: aqua;
+font-size: 30px;
+padding: 30px;
+font-family: Lucida Calligraphy;
+text-shadow: 7px 7px 10px black;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<center><h1>ART GALLERY</h1></center>
+</header>
+
+<nav>
+
+<a href="#" class="HOME"><i class="fa fa-fw fa-home"></i></a>
+<a href="register-page.html" class="signup" style="float: right"><label><i class="fa fa-fw fa-plus"></i>Sign up?</label></a>
+<a href="https://www.instagram.com/artmagic_8/" class="flm" style="float: right"><i class="fa fa-fw fa-bell"></i>FOLLOW ME</a>
+<a href="#" class="cnt" style="float: right"><i class="fa fa-fw fa-phone"></i>CONTACT US</a>
+<a href="#" class="abt" style="float: right"><i class="fa fa-fw fa-user"></i>ABOUT US</a>
+
+</nav>
+
+<marquee class="tag">Being Creative is not a Hobby ; It is a way of Life...</marquee>
+
+<div class="slide-container">
+<span class="slider-span" id="slider-span1"></span>
+<span class="slider-span" id="slider-span2"></span>
+<span class="slider-span" id="slider-span3"></span>
+<span class="slider-span" id="slider-span4"></span>
+<span class="slider-span" id="slider-span5"></span>
+<span class="slider-span" id="slider-span6"></span>
+<span class="slider-span" id="slider-span7"></span>
+
+<div class="image-slider">
+<div class="slides-div" id="slide-1">
+<img src="https://img.fixthephoto.com/blog/images/gallery/news_preview_mob_image__preview_579.jpg" height="100%" width="100%" alt="" class="img" id="img1">
+
+<a href="#slider-span1" class="button" id="button-1"></a>
+</div>
+
+
+<div class="slides-div" id="slide-2">
+<img src="https://th.bing.com/th/id/R.10fa39c44a4eec25b2e882f983db1c58?rik=5knBN9ESYhJNwA&riu=http%3a%2f%2fwww.upcycleart.info%2fwp-content%2fuploads%2f2016%2f02%2fStone-Art-Crafting.jpg&ehk=G4VKL8TfgAeXdZEAqGN5DkIw4XTKQVFnEO7TRNCJ0fw%3d&risl=&pid=ImgRaw&r=0" height="100%" width="100%" alt="" class="img" id="img2">
+
+<a href="#slider-span2" class="button" id="button-2"></a>
+</div>
+
+
+<div class="slides-div" id="slide-3">
+<img src="https://image.winudf.com/v2/image/Y29tLmFuZHJvbW8uZGV2NzEyNTgyLmFwcDc3NjQzM19zY3JlZW5fMV8xNTI0NTA2MjExXzA3OQ/screen-1.jpg?fakeurl=1&type=.jpg" alt="" class="img" id="img3">
+
+<a href="#slider-span3" class="button" id="button-3"></a>
+</div>
+
+
+<div class="slides-div" id="slide-4">
+<img src="https://5.imimg.com/data5/MP/LQ/IP/ANDROID-103035549/product-jpeg-500x500.jpg" height="100%" width="100%" alt="" class="img" id="img4">
+
+<a href="#slider-span4" class="button" id="button-4"></a>
+</div>
+
+
+<div class="slides-div" id="slide-5">
+<img src="https://cdn11.bigcommerce.com/s-ob7m2s98/images/stencil/2000x2000/products/3381/16939/horse_1__52960.1458960640.jpg?c=2" alt="" class="img" id="img5">
+
+<a href="#slider-span5" class="button" id="button-5"></a>
+</div>
+
+
+<div class="slides-div" id="slide-6">
+<img src="https://www.indiaart.com/Paintings/9040/Large/22699.jpg" alt="" class="img" id="img6">
+
+<a href="#slider-span6" class="button" id="button-6"></a>
+</div>
+
+
+<div class="slides-div" id="slide-7">
+<img src="https://cdn.shopify.com/s/files/1/1306/4195/products/wallmantra-mdf-cut-outs-beautiful-deer-head-design-wooden-wall-hanging-living-room-wooden-wall-decoration-21970352373926.jpg?v=1628370468" alt="" class="img" id="img7">
+
+<a href="#slider-span7" class="button" id="button-7"></a>
+</div>
+</div>
+</div>
+
+
+<footer>
+<h2 style="float: right">&copy; <label class="ss">SS </label> Creations</h2>
+</footer>
+
+</body>
+</html>
